@@ -1,14 +1,4 @@
-﻿//#include <iostream>
-//#include <vector>
-//#include <utility>
-//#include <algorithm>
-//#include <chrono>
-//using namespace std;
-//#include <cmath>
-//#include <cstdio>
-
-
-#include <Windows.h>
+﻿#include <Windows.h>
 #include "game.h"
 #include "menu.h"
 

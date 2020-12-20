@@ -12,13 +12,6 @@ using namespace std;
 
 
 
-
-//float fPlayerX = 1.5f;			// Player Start Position
-//float fPlayerY = 1.5f;
-//float fPlayerAngle = 0.0f;			// Player Start Rotation
-//float fFOV = 3.14159f / 5.0f;	// Field of View
-//float fDepth = 16.0f;			// Maximum rendering distance
-//float fSpeed = 3.0f;			// Walking Speed
 int nScreenWidth = 120;			// Console Screen Size X (columns)
 int nScreenHeight = 40;			// Console Screen Size Y (rows)
 
@@ -75,7 +68,6 @@ string getMap(int& nMapSize, int seed) {
                 map += '.';
         }
     }
-    //    system("pause");
     return map;
 
 }
@@ -84,8 +76,8 @@ string getMap(int& nMapSize, int seed) {
 struct gameStats {
     float fPlayerX;			// Player Start Position
     float fPlayerY;
-    float fPlayerAngle;			// Player Start Rotation
-    float fFOV;	// Field of View
+    float fPlayerAngle;		// Player Start Rotation
+    float fFOV;	            // Field of View
     float fDepth;			// Maximum rendering distance
     float fSpeed;			// Walking Speed
 };
@@ -96,10 +88,10 @@ void initialization (gameStats *parameters ){
     
     parameters->fPlayerX = 1.5f;			// Player Start Position
     parameters->fPlayerY = 1.5f;
-    parameters->fPlayerAngle = 0.0f;			// Player Start Rotation
-    parameters->fFOV = 3.14159f / 5.0f;	// Field of View
-    parameters->fDepth = 16.0f;			// Maximum rendering distance
-    parameters->fSpeed = 3.0f;			// Walking Speed
+    parameters->fPlayerAngle = 0.0f;		// Player Start Rotation
+    parameters->fFOV = 3.14159f / 5.0f;	    // Field of View
+    parameters->fDepth = 16.0f;			    // Maximum rendering distance
+    parameters->fSpeed = 3.0f;			    // Walking Speed
 }
 
 
@@ -110,16 +102,6 @@ void startGame(int nMapSize, int seed) {
     gameStats *parameters = new gameStats();
 
     initialization(parameters);
-
-
-
-    //float fPlayerX = 1.5f;			// Player Start Position
-    //float fPlayerY = 1.5f;
-    //float fPlayerAngle = 0.0f;			// Player Start Rotation
-    //float fFOV = 3.14159f / 5.0f;	// Field of View
-    //float fDepth = 16.0f;			// Maximum rendering distance
-    //float fSpeed = 3.0f;			// Walking Speed
-
 
     HANDLE hConsole = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
     SetConsoleActiveScreenBuffer(hConsole);
@@ -186,7 +168,6 @@ void startGame(int nMapSize, int seed) {
                     fDistanceToWall = parameters->fDepth;
                 }
                 else {
-                    //if (map[nTestY * nMapSize + nTestX] == '#') {
                     if (map.c_str()[nTestX * nMapSize + nTestY] == '#') {
                         bHitWall = true;
 
@@ -214,8 +195,6 @@ void startGame(int nMapSize, int seed) {
             int nCeiling = (float)(nScreenHeight / 2.0) - nScreenHeight / ((float)fDistanceToWall);
             int nFloor = nScreenHeight - nCeiling;
 
-
-            // check later
             char nShade = ' ';
 
             if (fDistanceToWall <= parameters->fDepth / 8.0f)
@@ -228,8 +207,6 @@ void startGame(int nMapSize, int seed) {
                 nShade = 176;
             else
                 nShade = ' ';  // too far
-
-
 
             if (bBoundary)
                 nShade = '|';
@@ -246,7 +223,7 @@ void startGame(int nMapSize, int seed) {
                     else if (b < 0.5)
                         nShade = 'x';
                     else if (b < 0.75)
-                        nShade = '-'; // middle dot
+                        nShade = '-';
                     else if (b < 0.9)
                         nShade = '.';
                     else
@@ -275,11 +252,6 @@ void startGame(int nMapSize, int seed) {
         WriteConsoleOutputCharacter(hConsole, screen, nScreenWidth * nScreenHeight, { 0,0 }, &dwBytesWritten);
     }
 
-
-    //   ╔╦╗                     
-    //   ║║║╔═╗╔╦╗    ╔╦╦╗╔═╗╔═╦╗
-    //   ╠╗║║╬║║║║    ║║║║║╬║║║║║
-    //   ╚═╝╚═╝╚═╝    ╚══╝╚═╝╚╩═╝
     char* finalString = "... .  . ......     ......   ......     .....    ......               .....   .   .     . .....     ......   ......     .....  .     . .....";
 
 

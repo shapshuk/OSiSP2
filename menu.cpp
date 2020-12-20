@@ -64,5 +64,4 @@ void settings(int &nMapSize, int &seed) {
 
     } while (variant != 3);
 
-    //return;
 }
