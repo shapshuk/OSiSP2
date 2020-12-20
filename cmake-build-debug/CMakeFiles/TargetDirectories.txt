@@ -1,0 +1,3 @@
+F:/Work/OSiSP2/Kursovaya/cmake-build-debug/CMakeFiles/Kursovaya.dir
+F:/Work/OSiSP2/Kursovaya/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Work/OSiSP2/Kursovaya/cmake-build-debug/CMakeFiles/rebuild_cache.dir

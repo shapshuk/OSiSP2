@@ -1,0 +1,3 @@
+F:/Work/OSiSP2/Kursovaya/out/build/x64-Release/CMakeFiles/Kursovaya.dir
+F:/Work/OSiSP2/Kursovaya/out/build/x64-Release/CMakeFiles/edit_cache.dir
+F:/Work/OSiSP2/Kursovaya/out/build/x64-Release/CMakeFiles/rebuild_cache.dir

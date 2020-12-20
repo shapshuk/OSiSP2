@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Work/OSiSP2/Kursovaya/main.cpp
+iostream
+-
+vector
+-
+utility
+-
+algorithm
+-
+chrono
+-
+cstdio
+-
+Windows.h
+-
+cmath
+-
+

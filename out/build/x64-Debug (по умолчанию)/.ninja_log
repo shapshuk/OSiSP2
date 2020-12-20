@@ -1,0 +1,16 @@
+# ninja log v5
+0	783	630106200	CMakeFiles/Kursovaya.dir/main.cpp.obj	7effa07f66745294
+786	1794	630106201	Kursovaya.exe	1d57e5d15194e013
+4	949	630105604	CMakeFiles/Kursovaya.dir/game.cpp.obj	c8cdf72c11cc0cd9
+6	1020	629905174	CMakeFiles/Kursovaya.dir/maptest.cpp.obj	9647c93ee1aab94b
+3	471	630025869	CMakeFiles/Kursovaya.dir/menu.cpp.obj	fbf120531b9ca3b5
+0	1027	630106482	CMakeFiles/Kursovaya.dir/game.cpp.obj	c8cdf72c11cc0cd9
+1030	1366	630106482	Kursovaya.exe	1d57e5d15194e013
+1	3147	630107126	CMakeFiles/Kursovaya.dir/game.cpp.obj	c8cdf72c11cc0cd9
+3170	3691	630107126	Kursovaya.exe	1d57e5d15194e013
+0	1492	630167324	CMakeFiles/Kursovaya.dir/game.cpp.obj	c8cdf72c11cc0cd9
+1505	2202	630167324	Kursovaya.exe	1d57e5d15194e013
+0	995	630168957	CMakeFiles/Kursovaya.dir/game.cpp.obj	c8cdf72c11cc0cd9
+1000	1279	630168957	Kursovaya.exe	1d57e5d15194e013
+1	1172	630181561	CMakeFiles/Kursovaya.dir/game.cpp.obj	c8cdf72c11cc0cd9
+1174	1469	630181561	Kursovaya.exe	1d57e5d15194e013
